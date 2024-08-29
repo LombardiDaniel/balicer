@@ -7,8 +7,8 @@ import (
 	"os"
 	"regexp"
 
-	"github.com/patos-ufscar/http-web-server-example-go/common"
-	"github.com/patos-ufscar/http-web-server-example-go/models"
+	"github.com/patos-ufscar/balicer/common"
+	"github.com/patos-ufscar/balicer/models"
 	"gopkg.in/yaml.v2"
 )
 

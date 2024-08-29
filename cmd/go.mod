@@ -1,4 +1,4 @@
-module github.com/patos-ufscar/http-web-server-example-go
+module github.com/patos-ufscar/balicer
 
 go 1.22.3
 

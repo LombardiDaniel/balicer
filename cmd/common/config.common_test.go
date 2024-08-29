@@ -3,7 +3,7 @@ package common_test
 import (
 	"testing"
 
-	"github.com/patos-ufscar/http-web-server-example-go/common"
+	"github.com/patos-ufscar/balicer/common"
 )
 
 func TestExtractRegExpFromHostStr(t *testing.T) {

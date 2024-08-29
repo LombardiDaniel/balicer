@@ -3,8 +3,8 @@ package handlers
 import (
 	"fmt"
 
-	"github.com/patos-ufscar/http-web-server-example-go/cli"
-	"github.com/patos-ufscar/http-web-server-example-go/models"
+	"github.com/patos-ufscar/balicer/cli"
+	"github.com/patos-ufscar/balicer/models"
 )
 
 type Handler interface {

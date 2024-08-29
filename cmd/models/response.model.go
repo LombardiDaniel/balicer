@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/patos-ufscar/http-web-server-example-go/utils"
+	"github.com/patos-ufscar/balicer/utils"
 )
 
 type HttpResponse struct {

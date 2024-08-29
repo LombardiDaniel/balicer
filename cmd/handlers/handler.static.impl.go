@@ -5,41 +5,41 @@ import (
 	"net/textproto"
 	"strings"
 
-	"github.com/patos-ufscar/http-web-server-example-go/models"
+	"github.com/patos-ufscar/balicer/models"
 )
 
 type HandlerStaticImpl struct {
-	Path       string
-	StatusCode int
-	Headers    map[string]string
-	Body       []byte
+	path       string
+	statusCode int
+	headers    map[string]string
+	body       []byte
 }
 
 func NewHandlerStaticImpl(path string, ret models.ReturnStatic) Handler {
 	// headers := make(map[string]string)
 	return &HandlerStaticImpl{
-		Path:       path,
-		StatusCode: ret.Code,
-		Headers:    ret.Headers,
-		Body:       ret.Body,
+		path:       path,
+		statusCode: ret.Code,
+		headers:    ret.Headers,
+		body:       ret.Body,
 	}
 }
 
 func (h *HandlerStaticImpl) ValidPath(path string) bool {
-	return strings.HasPrefix(path, h.Path)
+	return strings.HasPrefix(path, h.path)
 }
 
 func (h *HandlerStaticImpl) Handle(req models.HttpRequest) (models.HttpResponse, error) {
 	resp := models.NewHttpResponse()
 
-	for k, v := range h.Headers {
+	for k, v := range h.headers {
 		resp.Headers[textproto.CanonicalMIMEHeaderKey(k)] = v
 	}
 
-	resp.StatusCode = h.StatusCode
-	resp.StatusText = http.StatusText(h.StatusCode)
+	resp.StatusCode = h.statusCode
+	resp.StatusText = http.StatusText(h.statusCode)
 	resp.HTTPVersion = "HTTP/1.1"
-	resp.Body = h.Body
+	resp.Body = h.body
 
 	return resp, nil
 }

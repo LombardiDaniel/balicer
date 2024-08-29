@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/patos-ufscar/http-web-server-example-go/models"
+	"github.com/patos-ufscar/balicer/models"
 )
 
 func TestParseHttpRequest(t *testing.T) {

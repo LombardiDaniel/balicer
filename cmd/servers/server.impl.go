@@ -6,10 +6,10 @@ import (
 	"net"
 	"regexp"
 
-	"github.com/patos-ufscar/http-web-server-example-go/common"
-	"github.com/patos-ufscar/http-web-server-example-go/handlers"
-	"github.com/patos-ufscar/http-web-server-example-go/models"
-	"github.com/patos-ufscar/http-web-server-example-go/utils"
+	"github.com/patos-ufscar/balicer/common"
+	"github.com/patos-ufscar/balicer/handlers"
+	"github.com/patos-ufscar/balicer/models"
+	"github.com/patos-ufscar/balicer/utils"
 )
 
 const (

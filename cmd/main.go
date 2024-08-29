@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"log/slog"
 
-	"github.com/patos-ufscar/http-web-server-example-go/cli"
-	"github.com/patos-ufscar/http-web-server-example-go/common"
-	"github.com/patos-ufscar/http-web-server-example-go/handlers"
-	"github.com/patos-ufscar/http-web-server-example-go/servers"
-	"github.com/patos-ufscar/http-web-server-example-go/utils"
+	"github.com/patos-ufscar/balicer/cli"
+	"github.com/patos-ufscar/balicer/common"
+	"github.com/patos-ufscar/balicer/handlers"
+	"github.com/patos-ufscar/balicer/servers"
+	"github.com/patos-ufscar/balicer/utils"
 )
 
 var configPath string
